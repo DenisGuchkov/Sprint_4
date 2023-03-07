@@ -1,5 +1,6 @@
 package scooter;
 
+import ScooterPracticumServices.WebdriverSettings;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -24,9 +25,9 @@ public class OrderScooterTest extends WebdriverSettings {
     private final String dropDownPeriod;
     private final String colorId;
     private final String comments;
-    private final boolean сonfirmationOrder;
+    private final boolean confirmationOrder;
 
-    public OrderScooterTest(String topOrBot, String username, String lastname, String address, String phoneNumber, String stationName, String inputDate, String dropDownPeriod, String colorId, String comments, boolean сonfirmationOrder) {
+    public OrderScooterTest(String topOrBot, String username, String lastname, String address, String phoneNumber, String stationName, String inputDate, String dropDownPeriod, String colorId, String comments, boolean confirmationOrder) {
         this.topOrBot = topOrBot;
         this.stationName = stationName;
         this.username = username;
@@ -37,7 +38,7 @@ public class OrderScooterTest extends WebdriverSettings {
         this.dropDownPeriod = dropDownPeriod;
         this.colorId = colorId;
         this.comments = comments;
-        this.сonfirmationOrder = сonfirmationOrder;
+        this.confirmationOrder = confirmationOrder;
     }
 
     @Parameterized.Parameters(name = "Тестовые данные:{0},{1},{2},{3},{4},{5},{5},{7}")
@@ -55,6 +56,6 @@ public class OrderScooterTest extends WebdriverSettings {
         objFirstOrderForm.firstOrderForm(topOrBot, username, lastname, address, phoneNumber, stationName);
         objSecondOrderForm.secondOrderForm(inputDate, dropDownPeriod, colorId, comments);
         boolean actualResult = true;
-        assertEquals("Появление окна для подтверждения/отклонения заказа", actualResult, сonfirmationOrder);
+        assertEquals("Появление окна для подтверждения/отклонения заказа", actualResult, confirmationOrder);
     }
 }

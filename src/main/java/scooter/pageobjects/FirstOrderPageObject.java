@@ -25,8 +25,6 @@ public class FirstOrderPageObject {
     // нажатие на кнопку "Далее"
     private final By buttonFurther = By.xpath("//*[contains(@class,'Button')]//*[text()='Далее']");
     // нижняя кнопка "Заказать"
-    private final By orderBot = By.xpath("//*[contains(@class, 'Button')]//*[text()='Заказать']");
-    // hпинять все куки
     private final By cookieButton = By.xpath("//*[contains(@class, 'App')]//*[text()='да все привыкли']");
 
     public FirstOrderPageObject(WebDriver driver) {

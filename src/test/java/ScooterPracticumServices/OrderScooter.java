@@ -2,7 +2,6 @@ package ScooterPracticumServices;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import scooter.WebdriverSettings;
 import scooter.pageobjects.FirstOrderPageObject;
 import scooter.pageobjects.SecondOrderPageObject;
 
