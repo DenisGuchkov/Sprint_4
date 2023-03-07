@@ -10,10 +10,6 @@ public class SecondOrderPageObject {
     // срок аренды
     private final By rentalPeriod = By.xpath("//*[contains(@class,'Drop')]//span[@class='Dropdown-arrow']");
     // цвет самоката "черный жемчуг"
-    private final By scooterColorBlack = By.id("black");
-    // цвет самоката "серый"
-    private final By scooterColorGrey = By.id("grey");
-    // комментарии для курьера
     private final By commentsForTheCourier = By.xpath("//*[contains(@class,'Input')]//input[@placeholder='Комментарий для курьера']");
     // отправка формы Заказа
     private final By sendOrderForm = By.xpath("//*[contains(@class,'Button')]//button[text()='Заказать']");
