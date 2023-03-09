@@ -66,6 +66,7 @@ public class FirstOrderPageObject {
         driver.findElement(By.xpath("//*[contains(@class, 'select-search')]//*[text()='" + stationName + "']")).click();
     }
 
+
     //метод заполняет поля «Телефон»
     public void setInputPhoneNumber(String phoneNumber) {
         driver.findElement(inputPhoneNumber).sendKeys(phoneNumber);

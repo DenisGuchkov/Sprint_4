@@ -42,6 +42,7 @@ public class ElementsImportantQuestions extends WebdriverSettings {
                 {"//*[contains(text(),'Я живу за МКАДом, привезёте?')]", ".//*[starts-with(text(),'Да, обязательно.')]","Да, обязательно. Всем самокатов! И Москве, и Московской области."},
         };
     }
+
     @Test
     public void comparisontText() {
         WebDriverWait wait = new WebDriverWait(driver,10);

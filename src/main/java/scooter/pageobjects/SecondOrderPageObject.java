@@ -51,6 +51,7 @@ public class SecondOrderPageObject {
         driver.findElement(confirmationOrderWindow).isDisplayed();
     }
 
+
     public void secondOrderForm(String inputDate, String dropDownPeriod, String colorId, String comments) {
         setWhenToBring(inputDate);
         setRentalPeriod(dropDownPeriod);

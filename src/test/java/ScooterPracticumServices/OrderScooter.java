@@ -10,6 +10,7 @@ import scooter.pageobjects.SecondOrderPageObject;
  * Проверка заказа скутера
  */
 
+
 @RunWith(Parameterized.class)
 public class OrderScooter extends WebdriverSettings {
     private final String topOrBot;
