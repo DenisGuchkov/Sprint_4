@@ -50,8 +50,8 @@ public class ElementsQuestionsTest extends WebdriverSettings {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
         wait.until(ExpectedConditions.invisibilityOfElementLocated
                 (By.cssSelector(elementButton)));
-        ElementsQuestionsObject objOuestionsObject = new ElementsQuestionsObject(driver);
-        objOuestionsObject.elementsQuestionsObject(elementButton, textElement);
+        ElementsQuestionsObject objQuestionsObject = new ElementsQuestionsObject(driver);
+        objQuestionsObject.elementsQuestionsObject(elementButton, textElement);
         String resultGetText = driver.findElement(By.xpath(".//*[starts-with(text(),'" + textElement + "')]")).getText();
         assertEquals(result, resultGetText);
     }
