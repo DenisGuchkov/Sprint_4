@@ -31,7 +31,7 @@ public class FirstOrderPageObject {
         this.driver = driver;
     }
 
-    // метод кликает по кнопке «Заказать»
+    // метод клик по кнопке «Заказать»
     public void clickOrderButton(String topOrBottom) {
         driver.findElement(cookieButton).click();
         new WebDriverWait(driver, 3)
@@ -65,7 +65,6 @@ public class FirstOrderPageObject {
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@class, 'select-search')]//ul")));
         driver.findElement(By.xpath("//*[contains(@class, 'select-search')]//*[text()='" + stationName + "']")).click();
     }
-
 
     //метод заполняет поля «Телефон»
     public void setInputPhoneNumber(String phoneNumber) {

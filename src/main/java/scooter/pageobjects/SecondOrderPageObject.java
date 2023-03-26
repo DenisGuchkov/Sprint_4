@@ -13,7 +13,7 @@ public class SecondOrderPageObject {
     private final By commentsForTheCourier = By.xpath("//*[contains(@class,'Input')]//input[@placeholder='Комментарий для курьера']");
     // отправка формы Заказа
     private final By sendOrderForm = By.xpath("//*[contains(@class,'Button')]//button[text()='Заказать']");
-    // окно сподтвержлением заказа
+    // окно с подтверждением заказа
     private final By confirmationOrderWindow = By.className("Order_Modal__YZ-d3");
 
     public SecondOrderPageObject(WebDriver driver) {
@@ -41,7 +41,7 @@ public class SecondOrderPageObject {
         driver.findElement(commentsForTheCourier).sendKeys(comments);
     }
 
-    // Клик по кнопке заказть/отправка формы заказа
+    // Клик по кнопке заказ/отправка формы заказа
     public void clickSendOrderForm() {
         driver.findElement(sendOrderForm).click();
     }
@@ -50,7 +50,6 @@ public class SecondOrderPageObject {
     public void confirmationOrderWindow() {
         driver.findElement(confirmationOrderWindow).isDisplayed();
     }
-
 
     public void secondOrderForm(String inputDate, String dropDownPeriod, String colorId, String comments) {
         setWhenToBring(inputDate);

@@ -7,7 +7,6 @@ public class ElementsQuestionsObject {
     private final WebDriver driver;
     // Сколько это стоит? И как оплатить?
 
-
     public ElementsQuestionsObject(WebDriver driver) {
         this.driver = driver;
     }

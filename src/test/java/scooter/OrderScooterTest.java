@@ -12,7 +12,6 @@ import static org.junit.Assert.assertEquals;
  * Проверка заказа скутера
  */
 
-
 @RunWith(Parameterized.class)
 public class OrderScooterTest extends WebdriverSettings {
     private final String topOrBot;

@@ -18,7 +18,6 @@ public class WebdriverSettings {
         driver.get("https://qa-scooter.praktikum-services.ru/");// переход на страницу тестового приложения
     }
 
-
     @After
     public void teardown() {
         // Закрой браузер
